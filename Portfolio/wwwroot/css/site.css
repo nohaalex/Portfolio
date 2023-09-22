@@ -1,0 +1,111 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to right,#2c5f34,#aec6ad);
+    
+}
+
+.anchor{
+    height:50px;
+    width:50px;
+}
+
+
+.card-container{
+    display:grid;
+    place-items:center;
+    min-height:100vh;
+}
+/* CSS for Card Container */
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 20px 20px 10px  #252424;
+    overflow: hidden;
+    margin: 20px;
+    background-color: #605959;
+    border-radius:25px;
+    
+}
+
+    /* CSS for Card Image */
+    .card img {
+        width: 100%;
+        height: auto;
+       
+    }
+
+/* CSS for Card Content */
+    .card-content {
+        padding: 20px;
+        background-color: #605959;
+    }
+
+    .card-content h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        color: black;
+    }
+
+    .card-content p {
+        margin: 0;
+        font-weight:bold;
+    }
+
+    .card-content a {
+        text-decoration: none;
+        
+    }
+
+
+
+.aboutme{
+    margin-left:250px;
+    
+    height:100px;
+    width:800px;
+}
+
+.aboutme>p{
+    font-weight:bolder;
+}
+
+.github{
+    text-decoration:none;
+    color:black;
+}
+
+.github:hover{
+    color:white;
+}
+
+.contact-container {
+    box-shadow:30px 30px 30px 10px black;
+    border:2px solid white;
+    border-radius:30px;
+    height:450px;
+    width:300px;
+    padding:25px;
+    background-image:linear-gradient(to bottom,#2c5f34,#071f0a)
+    
+}
+

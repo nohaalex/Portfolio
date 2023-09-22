@@ -1,0 +1,52 @@
+﻿@model Portfolio.Models.Profile;
+
+<h1 class="text-center"> GET IN TOUCH</h1>
+
+<div class="contact-container  mx-auto">
+    <form asp-action="Contact" asp-controller="Home" method="post">
+        <br />
+        <fieldset>
+          
+            <div class="form-floating col-12 mx-auto">
+                <input asp-for="Name" id="Name" class="form-control col-12" />
+                <label asp-for="Name" id="Name"></label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <br />
+
+            <div class="form-floating col-12 mx-auto">
+                <input asp-for="EmailAddress" id="EmailAddress" class="form-control col-12" />
+                <label asp-for="EmailAddress" id="EmailAddress"></label>
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div>
+            <br />
+
+            <div class="form-floating col-12 mx-auto">
+                <input asp-for="Subject" id="Subject" class="form-control col-12" />
+                <label asp-for="Subject" id="Subject"></label>
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <br />
+
+            <div class="form-floating col-12 mx-auto">
+                <input asp-for="Body" id="Body" class="form-control col-12" />
+                <label asp-for="Body" id="Body"></label>
+                <span asp-validation-for="Body" class="text-danger"></span>
+            </div>
+            <br />
+
+            <div class="submit-button text-center">
+                <button type="submit" class="btn btn-primary text-light btn-outline-success">CONNECT</button>
+            </div>
+            <br />
+        </fieldset>
+    </form>
+</div>
+<br />
+<br />
+@{
+    if (ViewBag.Email != null)
+    {
+        <p class="text-light text-center fs-4"> @ViewBag.Email</p>
+    }
+}
